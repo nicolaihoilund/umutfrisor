@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex nofollow" />
+  <link rel="stylesheet" href="https://use.typekit.net/neu8hmo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Umut Frisør - Herreklip</title>
+</head>
+<body>
+  <header>
+    <img id="logo" src="/images/logo.png" alt="">
+    <nav>
+      <ul>
+          <li><a class="nitem" href="#om">Om Frisør</a></li>
+					<li><a class="nitem" href="#priser">Priser</a></li>
+					<li><a class="nitem" href="#hours">Åbningstider</a></li>
+					<li><a class="nitem" href="#beliggenhed">Find</a></li>
+          <li><a class="nitem" href="#kontakt">Bestil</a></li>
+				</ul>
+        <div id="burger">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cover">
+      <h1>Et klip i gode omgivelser.</h1>
+      <a href="#" class="button">Ring & Bestil</a>
+    </section>
+    <section id="om">
+      <div class="left">
+        <h2>Om Umut Frisør</h2>
+        <p>Hos Umut Frisør tilbydes der herreklip til alle aldre. Cihat står klar til at give dig en flot frisure til en god pris.</p>
+        <p>Med sine 32 års erfaring som frisør, har han oplevet lidt af hvert. Cihat er fleksibel, og han kan vejlede og inspirere dig. Hos Umut Frisør er kunden i fokus.</p>
+        <p>Salonen har eksisteret siden 2003 og har haft glade kunder lige siden.</p>
+      </div>
+      <div class="right">
+        <img id="cihat" src="/images/cihat.png" alt="Billede af Cihat Susuzlu">
+        <p class="info"><b>Cihat Susuzlu</b>, <i>Indehaver</i></p>
+      </div>
+
+    </section>
+    <section id="udtalelser">
+      <h2>Kunderne siger...</h2>
+      <div class="group">
+        <div class="item">
+          <h3>Søren Hjelmsø</h3>
+          <q>Cihat er en super dygtig herrefrisør og går meget op i sit arbejde. Udover han er en dygtig frisør, er han et super varmt menneske og altid frisk og snaksagelig.</q>
+        </div>
+        <div class="item">
+          <h3>Allan Altschul</h3>
+          <q>Tak for den flotte klipning og altid gode service. Jeg har prøvet mange frisører, men aldrig en så dygtig som Cihat er. Derfor har jeg også været en fast kunde i ca. 14 år.</q>
+        </div>
+        <div class="item">
+          <h3>SB Christensen</h3>
+          <q>Har prøvet mange steder og overraskende nok, er denne meget billige frisør den som har gjort det bedst. Jeg giver altid 25kr i drikkepenge her, da det er helt urimeligt at få et så godt resultat til under 200kr.</q>
+        </div>
+      </div>
+      <a href="#" class="button">Ring & Bestil</a>
+    </section>
+    <section id="priser">
+      <div class="left">
+        <h2>Priser</h2>
+        <table>
+          <tr>
+            <td>Klip & føn</td>
+            <td>170,-</td>
+          </tr>
+          <tr>
+            <td>Pensionister</td>
+            <td>150,-</td>
+          </tr>
+          <tr>
+            <td>Børn u/11 år</td>
+            <td>135,-</td>
+          </tr>
+        </table>
+      </div>
+
+      <img class="right" src="/images/klip.png" alt="">
+    </section>
+    <section id="beliggenhed">
+
+      <div class="gmap_canvas left">
+        <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Umut%20Fris%C3%B8r&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+
+      <div class="right">
+        <h2>Beliggenhed</h2>
+        <p>Umut Frisør ligger i Centrumgade i hjertet af Ballerup.<br>Det gør det nemt at kigge forbi, hvis man alligevel befinder sig i midtbyen.</p>
+      </div>
+
+
+
+    </section>
+    <section id="kontakt">
+      <h2>Bestil eller Kontakt</h2>
+      <p>Alle henvendelser sker via telefon på<br><span>28 45 39 75</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="content">
+      <div class="right">
+        <img id="blogo" src="/images/logo_hvid.png" alt="">
+        <p>28 45 39 75</p>
+        <p>Centrumgaden 2B<br>2750 Ballerup</p>
+      </div>
+      <div id="hours" class="left">
+        <h2>Åbningstider</h2>
+        <table>
+          <tr>
+            <td>Mandag - Fredag</td>
+            <td>10 - 18</td>
+          </tr>
+          <tr>
+            <td>Lørdag</td>
+            <td>10 - 15</td>
+          </tr>
+          <tr>
+            <td>Søndag</td>
+            <td>Lukket</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    const burger = document.querySelector('#burger');
+    const nav = document.querySelector('ul');
+    const items = document.querySelectorAll('.nitem');
+
+    for (var i = 0 ; i < items.length; i++) {
+       items[i].addEventListener('click', () => {
+         nav.classList.toggle('mobile')
+       });
+    };
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('mobile')
+    });
+
+  </script>
+
+</body>
+</html>
